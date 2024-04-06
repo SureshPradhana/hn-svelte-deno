@@ -1,14 +1,7 @@
 
 # Hacker News Clone
 
-Hacker News clone built using SvelteKit with Shadcn-Svelte for UI components. It's powered by Deno.
-
-## Technologies
-
-- **SvelteKit**
-- **Tailwind CSS**
-- **Shadcn-Svelte**
-- **Deno**
+Hacker News clone built using SvelteKit,Shadcn-Svelte and Deno.
 
 ## Local development
 
