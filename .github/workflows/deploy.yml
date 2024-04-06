@@ -45,5 +45,5 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: <YOUR PROJECT NAME> # Replace with your project name
+          project: hn-svelte-deno # Replace with your project name
           entrypoint: 'build/index.js'
