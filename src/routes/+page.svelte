@@ -1,12 +1,32 @@
 <script lang="ts">
 	import News from '$lib/components/News.svelte';
-	let items = Array.from({ length: 15 });
+	import { onMount } from 'svelte';
+	import type { NewsItem } from '$lib/types';
+	import { getIds, getItems } from '$lib/utils/utils';
+	let items: NewsItem[] = [];
+
+	let nextIndex = 15;
+	let ids;
+	let currentIds;
+
+	onMount(async () => {
+		ids = await getIds('topstories');
+		currentIds = ids.slice(0, nextIndex);
+		items = await getItems(currentIds);
+	});
+
+	async function loadMoreItems() {
+		currentIds = ids.slice(nextIndex, nextIndex + 15);
+		items = await getItems(currentIds);
+		nextIndex += 15;
+	}
 </script>
 
-{#each items as _, i}
-	<News key={i} />
+{#each items as item, i}
+	<News key={i} {item} />
 {/each}
-<a href="/newest">More</a>
+
+<button on:click={loadMoreItems}>More</button>
 
 <style lang="postcss">
 	:global(html) {

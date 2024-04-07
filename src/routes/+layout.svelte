@@ -21,12 +21,12 @@
 	let links = [
 		{ name: 'Hn', href: '/' },
 		{ name: 'new', href: '/newest' },
-		{ name: 'past', href: '/past' },
-		{ name: 'comments', href: '/comments' },
+		// { name: 'past', href: '/past' },
+		// { name: 'comments', href: '/comments' },
 		{ name: 'ask', href: '/ask' },
 		{ name: 'show', href: '/show' },
 		{ name: 'jobs', href: '/jobs' },
-		{ name: 'submit', href: '/submit' },
+		// { name: 'submit', href: '/submit' },
 		{ name: 'login', href: '/login' }
 	];
 

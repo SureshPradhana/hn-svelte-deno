@@ -36,7 +36,9 @@
 		"bits-ui": "^0.21.2",
 		"clsx": "^2.1.0",
 		"feather-icons": "^4.29.1",
+		"javascript-time-ago": "^2.5.9",
 		"tailwind-merge": "^2.2.2",
-		"tailwind-variants": "^0.2.1"
+		"tailwind-variants": "^0.2.1",
+		"time-difference-js": "^1.0.1"
 	}
 }

@@ -9,7 +9,7 @@
 	</div>
 	<Separator orientation="vertical" />
 	<div>
-		<div class="flex h-3 items-center space-x-4 text-xs text-gray-100">
+		<div class="flex h-3 items-center space-x-4 text-xs text-black">
 			<div>56 points by toshi</div>
 			<Separator orientation="vertical" />
 			<div>4 hours ago</div>
