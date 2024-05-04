@@ -24,7 +24,7 @@
 	</div>
 	<div>
 		<ul>
-			<li><a href={last.href} />{last.name}</li>
+			<li><a href={last.href}>{last.name}</a></li>
 		</ul>
 	</div>
 </nav>

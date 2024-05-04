@@ -27,7 +27,7 @@
 		{ name: 'show', href: '/show' },
 		{ name: 'jobs', href: '/jobs' },
 		// { name: 'submit', href: '/submit' },
-		{ name: 'login', href: '/login' }
+		{ name: 'Github', href: 'https://github.com/SureshPradhana/hn-svelte-deno' }
 	];
 
 	navigating.subscribe((val) => {
