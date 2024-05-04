@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	import type { NewsItem } from '$lib/types';
 	import { getIds, getItems } from '$lib/utils/utils';
+	import { LoadBars } from 'svelte-loading-animation';
 	let items: NewsItem[] = [];
 
 	let nextIndex = 15;
@@ -22,11 +23,16 @@
 	}
 </script>
 
-{#each items as item, i}
-	<News key={i} {item} />
-{/each}
-
-<button on:click={loadMoreItems}>More</button>
+{#if items.length === 0}
+	<div class="flex justify-center content-center">
+		<LoadBars size="32px" color="red" class="mx-auto" />
+	</div>
+{:else}
+	{#each items as item, i}
+		<News key={i} {item} />
+	{/each}
+	<button on:click={loadMoreItems}>More</button>
+{/if}
 
 <style lang="postcss">
 	:global(html) {
