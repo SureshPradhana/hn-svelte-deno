@@ -25,8 +25,9 @@
 {#each items as item, i}
 	<News key={i} {item} />
 {/each}
-
-<button on:click={loadMoreItems}>More</button>
+{#if items.length > 0}
+	<button on:click={loadMoreItems}>More</button>
+{/if}
 
 <style lang="postcss">
 	:global(html) {

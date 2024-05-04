@@ -11,4 +11,8 @@
 {#each items as _, i}
 	<News key={i} />
 {/each}
+{#if items}
+	<button on:click={loadMoreItems}>More</button>
+{/if}
+
 <a href="/newest">More</a>
